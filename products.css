@@ -1,0 +1,166 @@
+*{
+    text-decoration:none ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* ===================================================NAV BAR  */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #1f242d;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+    position: sticky;
+}
+
+#cmp-name{
+    font-size: 18px;
+}
+
+#cmp-name a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+#cart{
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ======================================================================PRODUCTS */
+
+#categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.electronic-wufer{
+    width: 250px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 0 10px #1f242d;
+    border-radius: 10px;
+}
+
+.electronic-wufer img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    border-bottom: solid 1px #1f242d;
+
+}
+
+#product-detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+#prodcut-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#price-init{
+    color: grey;
+    text-decoration: line-through;
+    padding: 5px 0px;
+}
+
+.addcart-btn{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(255, 104, 16);
+    color: white;
+}
+
+#products h2{
+    font-size: 40px;
+    color:rgb(255, 104, 16);
+    margin: 20px;
+    margin-left: 7%;
+}
+
+/* ---------------------------------------SEARCH BOX */
+#search-box{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-box input{
+    width: 600px;
+    padding: 11px 15px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: solid 1px #0ef;
+}
+#search-box button{
+    width:100px;
+    height: 40px;
+    padding: 7px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    background-color: #0ef;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-box button i{
+    font-size: 22px;
+}
+/* ===========================================CART ITEMS */
+#cart-items{
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    width: 500px;
+    background-color: #1f242d;
+    top: 70px;
+    padding: 20px;
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1f242d;
+}
+#purchase-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#item{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.purchase-button{
+    padding: 8px 25px;
+    color: #1f242d;
+    background-color: #0ef;
+}
